@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.demo.chevba.todolist</groupId>
+    <groupId>com.demo.bastienche.osgi</groupId>
     <artifactId>todolist</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -54,11 +54,6 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
-    <modules>
-        <module>impl</module>
-        <module>app</module>
-    </modules>
 
     <dependencyManagement>
         <dependencies>
@@ -162,7 +157,7 @@ Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
                                 <goal>index</goal>
                             </goals>
                             <configuration>
-                                <indexName>${project.artifactId} Test</indexName>
+                                <indexName>${project.artifactId}</indexName>
                                 <outputFile>${project.build.directory}/test-index.xml</outputFile>
                                 <scopes>
                                     <scope>test</scope>
@@ -190,7 +185,7 @@ Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
                         </execution>
                     </executions>
                 </plugin>
-
+                
                 <!-- Define the version of the export plugin we use -->
                 <plugin>
                     <groupId>biz.aQute.bnd</groupId>
@@ -208,7 +203,7 @@ Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
                         </execution>
                     </executions>
                 </plugin>
-
+                
                 <!-- Define the version of the testing plugin that we use -->
                 <plugin>
                     <groupId>biz.aQute.bnd</groupId>
@@ -222,10 +217,9 @@ Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
                         </execution>
                     </executions>
                 </plugin>
-
-                <!-- Define the version of the baseline plugin we use and 
-                    avoid failing when no baseline jar exists. (for example before the first 
-                    release) -->
+                
+                <!-- Define the version of the baseline plugin we use and avoid failing
+                    when no baseline jar exists. (for example before the first release) -->
                 <plugin>
                     <groupId>biz.aQute.bnd</groupId>
                     <artifactId>bnd-baseline-maven-plugin</artifactId>
