@@ -8,7 +8,7 @@ public interface TodoDAO {
 
 	public TodoDTO getTodo(Long todoID);
 
-	public List<TodoDTO> getTodos(Long todoID);
+	public List<TodoDTO> getTodos();
 	
 	public Long addTodo(TodoDTO todoDTO);
 	

@@ -14,6 +14,11 @@
     <description>The todo-dao-impl DS component - built using OSGi enRoute R7</description>
 
     <dependencies>
+    	<dependency>
+	    	<groupId>com.demo.bastienche.osgi.todolist</groupId>
+		    <artifactId>todo-dao-api</artifactId>
+		    <version>1.0-SNAPSHOT</version>
+		</dependency>
         <dependency>
             <groupId>org.osgi.enroute</groupId>
             <artifactId>osgi-api</artifactId>
