@@ -8,10 +8,10 @@
   </parent>
 
     <groupId>com.demo.bastienche.osgi.todolist</groupId>
-    <artifactId>dao-api</artifactId>
+    <artifactId>todo-dao-api</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <description>The dao-api API bundle - built using OSGi enRoute R7</description>
+    <description>The todo-dao-api API bundle - built using OSGi enRoute R7</description>
 
     <dependencies>
         <dependency>

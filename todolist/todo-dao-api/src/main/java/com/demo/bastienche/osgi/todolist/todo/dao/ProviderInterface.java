@@ -1,4 +1,4 @@
-package com.demo.bastienche.osgi.todolist.dao;
+package com.demo.bastienche.osgi.todolist.todo.dao;
 
 import org.osgi.annotation.versioning.ProviderType;
 
