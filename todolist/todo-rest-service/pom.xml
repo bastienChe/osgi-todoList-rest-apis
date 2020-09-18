@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-    <artifactId>todolist</artifactId>
-    <groupId>com.demo.bastienche.osgi</groupId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
+	    <artifactId>todolist</artifactId>
+	    <groupId>com.demo.bastienche.osgi</groupId>
+	    <version>1.0-SNAPSHOT</version>
+	  </parent>
 
     <groupId>com.demo.bastienche.osgi.todolist</groupId>
     <artifactId>todo-rest-service</artifactId>
@@ -29,6 +29,11 @@
             <artifactId>test-bundles</artifactId>
             <type>pom</type>
         </dependency>
+    	<dependency>
+	    	<groupId>com.demo.bastienche.osgi.todolist</groupId>
+		    <artifactId>todo-dao-impl</artifactId>
+		    <version>1.0-SNAPSHOT</version>
+		</dependency>
      </dependencies>
 
     <build>

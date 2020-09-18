@@ -11,11 +11,18 @@ import com.demo.bastienche.osgi.todolist.todo.dao.dto.TodoDTO;
 @Component
 public class LocalTodoImpl implements TodoDAO{
 
-	ArrayList<TodoDTO> localTodos;
+	private ArrayList<TodoDTO> localTodos;
 	
 	@Override
 	public TodoDTO getTodo(Long todoID) {
 		if(todoID == null) return null;
+		
+	  	TodoDTO myTodo = new TodoDTO();
+	  	myTodo.todoID = Long.valueOf(1);
+	  	myTodo.description = "desc";
+	  	myTodo.priority = TodoDTO.Priority.MEDIUM;
+	  	myTodo.title = "title";
+	  	
 		
 		for(TodoDTO todo : this.localTodos) {
 			if(todo.todoID.equals(todoID)) return todo;
