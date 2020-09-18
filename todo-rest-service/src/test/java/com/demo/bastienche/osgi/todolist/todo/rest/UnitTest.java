@@ -1,4 +1,4 @@
-package com.demo.bastienche.osgi.todolist.rest;
+package com.demo.bastienche.osgi.todolist.todo.rest;
 
 import org.junit.Test;
 

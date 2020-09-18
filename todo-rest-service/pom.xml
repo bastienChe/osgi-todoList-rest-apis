@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.demo.bastienche.osgi.todolist</groupId>
-    <artifactId>rest-service</artifactId>
+    <artifactId>todo-rest-service</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <description>The rest-service DS component - built using OSGi enRoute R7</description>
+    <description>The todo-rest-service DS component - built using OSGi enRoute R7</description>
 
     <dependencies>
         <dependency>
